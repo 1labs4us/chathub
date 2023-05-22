@@ -1,0 +1,1 @@
+Chathub is a chat application with AI-powered and wide integrations.
