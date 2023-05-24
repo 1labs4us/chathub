@@ -2,12 +2,12 @@ import { chakra } from "@chakra-ui/react";
 
 const Logo = (props: any) => (
   <chakra.svg
+    xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 520 520"
     fill="none"
-    xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <g clip-path="url(#clip0_10_2)">
+    <g clipPath="url(#clip0_10_2)">
       <circle cx="260" cy="260" r="260" fill="#060b1c" />
       <rect x="219" y="124" width="67" height="25" fill="white" />
       <rect x="212" y="389" width="97" height="8" fill="white" />

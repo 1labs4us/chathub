@@ -1,0 +1,12 @@
+export interface IMessages {
+  id: number;
+  name: string;
+  message: string;
+  time: string;
+}
+
+export interface IChatMessages {
+  message: string;
+  from: string;
+  dateSent: string;
+}
