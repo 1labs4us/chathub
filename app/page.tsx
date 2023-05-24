@@ -2,12 +2,15 @@
 
 import { HStack, Flex } from "@chakra-ui/react";
 
+// components
+import { Navigation } from "@/components/ui";
+
 export default function Home() {
   return (
     <main>
       <HStack h="100vh" spacing={0}>
         <Flex as="nav" h="full" maxW={16} w="full" bg="gray.100">
-          Navigation
+          <Navigation />
         </Flex>
         <Flex
           as="aside"
