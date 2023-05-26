@@ -4,6 +4,7 @@ import { HStack, Flex } from "@chakra-ui/react";
 
 // components
 import { Navigation } from "@/components/ui";
+import { ChatHistorySidebar } from "@/components/ui";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
           borderRightWidth={1}
           pt={8}
         >
-          ChatHistorySidebar
+          <ChatHistorySidebar />
         </Flex>
         <Flex
           as="main"
