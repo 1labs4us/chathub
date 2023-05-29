@@ -1,12 +1,24 @@
 "use client";
 
-import { HStack, Flex } from "@chakra-ui/react";
+import { HStack, Flex, useDisclosure } from "@chakra-ui/react";
 
 // components
 import { Navigation } from "@/components/ui";
 import { ChatHistorySidebar } from "@/components/ui";
+import { Chat } from "@/components/ui";
 
 export default function Home() {
+  const {
+    isOpen: isChatHistoryOpen,
+    onOpen: onChatHistoryOpen,
+    onClose: onChatHistoryClose,
+  } = useDisclosure();
+  const {
+    isOpen: isChatFilesOpen,
+    onOpen: onChatFilesOpen,
+    onClose: onChatFilesClose,
+  } = useDisclosure();
+
   return (
     <main>
       <HStack h="100vh" spacing={0}>
@@ -32,7 +44,10 @@ export default function Home() {
           borderRightColor="gray.100"
           borderRightWidth={1}
         >
-          onChatHistoryOpen onChatFilesOpen
+          <Chat
+            onChatHistoryOpen={onChatHistoryOpen}
+            onChatFilesOpen={onChatFilesOpen}
+          />
         </Flex>
         <Flex
           as="aside"
