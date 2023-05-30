@@ -3,8 +3,7 @@
 import { HStack, Flex, useDisclosure } from "@chakra-ui/react";
 
 // components
-import { Navigation } from "@/components/ui";
-import { ChatHistorySidebar } from "@/components/ui";
+import { Navigation, ChatHistorySidebar } from "@/components/ui";
 import { Chat } from "@/components/ui";
 
 export default function Home() {

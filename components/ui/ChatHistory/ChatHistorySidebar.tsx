@@ -15,7 +15,7 @@ import {
 import ChatRow from "./ChatRow";
 import { messages } from "@/shared/messages";
 import { IMessages } from "@/shared/types";
-import { IconShare } from "@/icons/icon-share";
+import { IconShare } from "@/components/icons";
 
 const ChatHistorySidebar = () => {
   return (

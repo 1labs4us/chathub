@@ -1,11 +1,14 @@
 import { VStack, IconButton, Tooltip } from "@chakra-ui/react";
 
-import { IconInbox } from "@/icons/icon-inbox";
-import { IconSearch } from "@/icons/icon-search";
-import { IconHome } from "@/icons/icon-home";
-import { IconSetting } from "@/icons/icon-setting";
-import { IconNotification } from "@/icons/icon-notification";
-import { Logo } from "@/icons/logo";
+// icons
+import {
+  IconInbox,
+  IconSearch,
+  IconHome,
+  IconSetting,
+  IconNotification,
+  Logo,
+} from "@/components/icons";
 
 const Navigation = () => {
   return (

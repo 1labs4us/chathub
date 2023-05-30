@@ -10,9 +10,7 @@ import {
 
 // components
 import ChatBubble from "./ChatBubble";
-import { IconDocument } from "@/icons/icon-document";
-import { IconChat } from "@/icons/icon-chat";
-import { IconSendChat } from "@/icons/icon-sendchat";
+import { IconDocument, IconChat, IconSendChat } from "@/components/icons";
 
 import { TChatProps } from "@/shared/types";
 import { messages } from "@/shared/chat-messages";
