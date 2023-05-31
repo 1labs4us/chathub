@@ -3,8 +3,14 @@
 import { HStack, Flex, useDisclosure } from "@chakra-ui/react";
 
 // components
-import { Navigation, ChatHistorySidebar } from "@/components/ui";
-import { Chat } from "@/components/ui";
+import {
+  Chat,
+  Navigation,
+  ChatHistorySidebar,
+  ChatHistoryDrawer,
+  ChatFiles,
+  ChatFilesDrawer,
+} from "@/components/ui";
 
 export default function Home() {
   const {
@@ -55,9 +61,13 @@ export default function Home() {
           display={{ base: "none", lg: "flex" }}
           w="full"
         >
-          ChatFiles
+          <ChatFiles />
         </Flex>
-        ChatHistoryDrawer ChatFilesDrawer
+        <ChatHistoryDrawer
+          isOpen={isChatHistoryOpen}
+          onClose={onChatHistoryClose}
+        />
+        <ChatFilesDrawer isOpen={isChatFilesOpen} onClose={onChatFilesClose} />
       </HStack>
     </main>
   );
